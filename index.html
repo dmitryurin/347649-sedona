@@ -6,31 +6,32 @@
   </head>
   <body>
     <div class="site-container">
-      <header class="header">
+      <header class="main-header">
         <nav class="navigation">
           <div class="logo">
-           <img src="img/logo.png" width="190" height="102" alt="City Of Sedona">
+            <img src="img/logo.png" width="190" height="102" alt="City Of Sedona">
           </div>
-          <ul>
-            <li class="nav-item fl">
-              <a href="#">Информация</a>
-            </li>
-            <li class="nav-item fl">
-              <a href="#">Фото и видео</a>
-            </li>
-            <li class="nav-item fr">
-              <a href="#">Карта штата</a>
-            </li>
-            <li class="nav-item fr">
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
+          <nav class="main-navigation">
+            <ul>
+              <li class="nav-item fl">
+                <a href="#">Информация</a>
+              </li>
+              <li class="nav-item fl">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li class="nav-item fr">
+                <a href="#">Карта штата</a>
+              </li>
+              <li class="nav-item fr">
+                <a href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
         </nav>
       </header>
       <main class="container">
         <div class="main-img-container">
           <img src="img/main.jpg" alt="Sedona" width="1200" height="508">
-          <div class="mask"></div>
         </div>
         <div class="index-content">
           <div class="index-content-title">
@@ -49,7 +50,7 @@
              <div class="feature-pic fr">
                <img src="img/city-1.jpg" width="400" height="200" alt="Настоящий городок">
              </div>
-          </div>
+           </div>
            <div class="advantages">
              <div class="advantage accommodation">
                <h2 class="caption">Жилье</h2>
@@ -69,16 +70,16 @@
            </div>
            <div class="feature">
              <div class="feature-pic fl">
-                 <img src="img/city-2.jpg" width="400" height="200" alt="Мост дьявола">
-               </div>
-              <div class="feature-text fr">
-                <h2 class="caption">Там есть<br>
+               <img src="img/city-2.jpg" width="400" height="200" alt="Мост дьявола">
+             </div>
+             <div class="feature-text fr">
+               <h2 class="caption">Там есть<br>
                 Мост Дьявола</h2>
                <p class="number">№2</p>
                <p class="text">Да,по нему можно пройти! Если конечно<br>
                   Вы осмелитесь</p>
-               </div>
-          </div>
+             </div>
+           </div>
            <div class="advantages bg-gray">
              <div class="advantage">
                <h2 class="caption">Небольшая<br>
@@ -102,62 +103,53 @@
                   толпится там</p>
              </div>
            </div>
-           <div class="map-block">
-             <div class="interest">
-               <h2 class="caption caption-big">Заинтересовались?</h2>
-               <p class="text">Укажите предполагаемые даты поездки,<br>
-                  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-             </div>
-             <div class="form">
-               <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
-                 <h2 class="caption form-caption">Поиск гостиницы в Cедоне</h2>
-                 <div class="form-body">
-                   <div class="form-element">
-                     <label for="arrival-date" class="label">Дата заезда:</label> 
-                     <input type="text" id="arrival-date" class="input" name="arrival" placeholder="24 Апреля 2017">  
-                   </div>
-                   <div class="form-element">
-                     <label for="departure-date" class="label">Дата выезда:</label>
-                     <input type="text" id="departure-date" class="input" name="departure" placeholder="4 Июля 2017">
-                   </div>
-                   <div class="form-element form-element-small">
-                     <label for="adults" class="label">Взрослые:</label>
-                     <div class="input-container">
-                       <div class="minus">-</div>
-                       <input type="text" id="adults" class="input" name="adults-number" placeholder="2">
-                       <div class="plus">+</div>
-                     </div>
-                   </div>
-                   <div class="form-element form-element-small">
-                     <label for="adults" class="label">Дети:</label>
-                     <div class="input-container">
-                       <div class="minus">-</div>
-                       <input type="text" id="children" class="input" name="children-number" placeholder="0">
-                       <div class="plus">+</div>
-                     </div>
-                   </div>
-                   <button class="btn" type="submit">Найти</button>
-                 </div>
-               </form>
-             </div>
-           </div>
-         </div>  <!--уровень index-content-->
-       </main>
-       <footer class="main-footer">
-         <div class="container">
-           <div class="footer-visit">
-             <p>#VISITSEDONA</p>
-           </div>
-           <div class="footer-social">
-             <a class="social-btn social-btn-tw" href="#" target="_blank">Твиттер</a>
-             <a class="social-btn social-btn-fb" href="#" target="_blank">Фейсбук</a>
-             <a class="social-btn social-btn-youtube" href="#" target="_blank">YouTube</a>
-           </div>
-           <div class="footer-copyright">
-             <p class="footer-copyright-text">WEBSITE BY</p>
-             <img class="footer-copyright-pic" alt="htmlacademy logo" src="img/htmlacademy-logo.png">
-           </div>
-         </div>
+           <div class="interest">
+             <h2 class="caption caption-big">Заинтересовались?</h2>
+             <p class="text">Укажите предполагаемые даты поездки,<br>
+              и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+              <button class="btn btn-big" type="button">Поиск гостиницы в Седоне</button>
+            </div>
+            <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form-element">
+                <label for="arrival-date" class="label">Дата заезда:</label> 
+                <input type="text" id="arrival-date" class="input" name="arrival" placeholder="24 Апреля 2017">  
+              </div>
+              <div class="form-element">
+                <label for="departure-date" class="label">Дата выезда:</label>
+                <input type="text" id="departure-date" class="input" name="departure" placeholder="4 Июля 2017">
+              </div>
+              <div class="form-element form-element-small">
+                <label for="adults" class="label">Взрослые:</label>
+                  <div class="input-container">
+                    <div class="minus">-</div>
+                    <input type="text" id="adults" class="input" name="adults-number" placeholder="2">
+                    <div class="plus">+</div>
+                  </div>
+                </div>
+                <div class="form-element form-element-small">
+                  <label for="children" class="label">Дети:</label>
+                    <div class="input-container">
+                      <div class="minus">-</div>
+                      <input type="text" id="children" class="input" name="children-number" placeholder="0">
+                      <div class="plus">+</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-small" type="submit">Найти</button>
+                </form>
+            </div> <!--уровень index-content-->
+        </main>
+        <footer class="main-footer">
+          <div class="footer-visit">
+            <h2 class="caption">#VisitSedona</h2>
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-btn-tw" href="#" target="_blank">Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#" target="_blank">Фейсбук</a>
+            <a class="social-btn social-btn-youtube" href="#" target="_blank">YouTube</a>
+          </div>
+          <div class="footer-copyright">
+            <p class="text">Website By<a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.png" width="150" height="50" border="0" alt="Логотип Академии"></a></p>
+          </div>
        </footer>
      </div>
   </body>
